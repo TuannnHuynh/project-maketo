@@ -1,0 +1,114 @@
+@keyframes fadeDown {
+    from {
+
+        transform: translateY(-12px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveToRight-p {
+    from {
+        opacity: 1;
+        transform: translateX(-130px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveToRight-h2 {
+    from {
+        opacity: 1;
+        transform: translateX(-420px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveToRight-btn {
+    from {
+        opacity: 1;
+        transform: translateX(-190px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveToLeft-btn {
+    from {
+        opacity: 1;
+        transform: translateX(130px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes modalShow {
+    from {
+        opacity: 0;
+        right: -380px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes modalClose {
+    from {
+        opacity: 1;
+        right: 0;
+    }
+
+    to {
+        right: -400px;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,68 @@
+@mixin box-shadow {
+    box-shadow: 15px 15px 30px 0 rgba(0, 0, 0, 0.16);
+}
+
+@mixin w-h($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin createBadge($color, $cnt) {
+    &::before {
+        content: $cnt;
+        position: absolute;
+        padding: 3px 8px;
+        background-color: $color;
+        top: -6px;
+        left: 18px;
+        font-size: 12px;
+        color: white;
+        font-weight: 600;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-width: 6px;
+        border-color: transparent transparent transparent $color;
+        top: 9px;
+        left: 18px;
+    }
+}
+
+@mixin createBadge_Tablet($color, $cnt, $left) {
+    &::after {
+        content: $cnt;
+        position: absolute;
+        top: 36%;
+        left: $left;
+        padding: 3px 6px;
+        background-color: $color;
+        font-size: 10px;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@mixin createValue($color, $bg-color, $bor-color) {
+    @include w-h(20px, 20px);
+    background-color: $bg-color;
+    position: absolute;
+    font-size: 12px;
+    color: $color;
+    border-radius: 50%;
+    border: 3px solid $bor-color;
+}
+
+@mixin text($color, $font-s, $font-w) {
+    color: $color;
+    font-size: $font-s;
+    font-weight: $font-w;
+}
+
+@mixin button($pad-t-b, $pad-l-r, $bg-color, $bor-r) {
+    padding: $pad-t-b $pad-l-r;
+    background-color: $bg-color;
+    border-radius: $bor-r;
+}
